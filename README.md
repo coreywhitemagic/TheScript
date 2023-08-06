@@ -1,4 +1,4 @@
-# TheScript
+# The Script
 The Script: Cold Reading for Mentalists
 https://www.amazon.com/dp/B0CC68GQRG
 
