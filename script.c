@@ -104,7 +104,6 @@ int main() {
     std::getline(std::cin, userAnswer);
     std::cout << std::endl;
     double similarity = similarityPercentage(userAnswer, answers[questionNumber]);
-    cout<<std::endl<<similarity<<std::endl;
     if (similarity > 65) {
       std::cout << "Correct! ("<<similarity<<"%)\n\n";
       questionNumber++;
