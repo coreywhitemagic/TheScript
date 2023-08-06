@@ -6,6 +6,8 @@
 
 #include <algorithm> // for std::min
 
+#include <fstream>
+
 using namespace std;
 
 double similarityPercentage(const std::string &s1, const std::string &s2) {
@@ -36,34 +38,18 @@ double similarityPercentage(const std::string &s1, const std::string &s2) {
 }
 
 int main() {
-  std::string answers[] = {
-    "Line 1",
-    "Line 2",
-    "Line 3",
-    "Line 4",
-    "Line 5",
-    "Line 6",
-    "Line 7",
-    "Line 8",
-    "Line 9",
-    "Line 10",
-    "Line 11",
-    "Line 12",
-    "Line 13",
-    "Line 14",
-    "Line 15",
-    "Line 16",
-    "Line 17",
-    "Line 18",
-    "Line 19",
-    "Line 20",
-    "Line 21",
-    "Line 22",
-    "Line 23",
-    "Line 24",
-    "Line 25",
-    "Line 26"
-  };
+    ifstream answersFile("answers.txt");
+    if (!answersFile) {
+        cerr << "Error opening answers file." << endl;
+        return 1;
+    }
+
+    vector<string> answers;
+    string line;
+    while (getline(answersFile, line)) {
+        answers.push_back(line);
+    }
+    answersFile.close();
 
   std::string planet[] = {
     "sun",
@@ -97,21 +83,27 @@ int main() {
   std::string userAnswer;
   int questionNumber = 0;
   int attempts = 0;
+  int planetNumber = 0;
 
-  while (questionNumber < 26) {
+  while (questionNumber < answers.size()) {
+    if(planetNumber > 25){
+      planetNumber = 0;
+    }
     std::cout << "Line " << questionNumber + 1 << "\n(" 
-    << planet[questionNumber] << ")\n";
+    << planet[planetNumber] << ")\n";
     std::getline(std::cin, userAnswer);
     std::cout << std::endl;
     double similarity = similarityPercentage(userAnswer, answers[questionNumber]);
     if (similarity > 65) {
       std::cout << "Correct! ("<<similarity<<"%)\n\n";
       questionNumber++;
+      planetNumber++;
     } else {
       std::cout << "The correct answer was, '" 
       << answers[questionNumber] << "' ("<<similarity<<"%)\n" <<
         "Starting over.\n\n";
       questionNumber = 0;
+      planetNumber = 0;
     }
   }
 
