@@ -40,8 +40,9 @@ int main(int argc, char* argv[]) {
         answersFileName = argv[1];
     }
     else {
-        std::cout << "Script File: ";
-        std::cin >> answersFileName;
+        std::cout << "\nScript File: ";        
+        std::getline(std::cin, answersFileName);
+        std::cout << std::endl;
     }
 
     ifstream answersFile(answersFileName);
