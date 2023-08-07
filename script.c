@@ -33,8 +33,18 @@ double similarityPercentage(const std::string& s1, const std::string& s2) {
     return similarity;
 }
 
-int main() {
-    ifstream answersFile("answers.txt");
+int main(int argc, char* argv[]) {
+    std::string answersFileName;
+
+    if (argc > 1) {
+        answersFileName = argv[1];
+    }
+    else {
+        std::cout << "Script File: ";
+        std::cin >> answersFileName;
+    }
+
+    ifstream answersFile(answersFileName);
     if (!answersFile) {
         cerr << "Error opening answers file." << endl;
         return 1;
