@@ -34,13 +34,15 @@ double similarityPercentage(const std::string& s1, const std::string& s2) {
 }
 
 int main(int argc, char* argv[]) {
+
     std::string answersFileName;
+    std::cout << std::endl;
 
     if (argc > 1) {
-        answersFileName = argv[1];
+        answersFileName = argv[1];        
     }
     else {
-        std::cout << "\nScript File: ";        
+        std::cout << "Script File: ";        
         std::getline(std::cin, answersFileName);
         std::cout << std::endl;
     }
