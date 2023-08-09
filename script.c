@@ -103,7 +103,7 @@ int main(int argc, char* argv[]) {
         std::getline(std::cin, userAnswer);
         std::cout << std::endl;
         double similarity = similarityPercentage(userAnswer, answers[questionNumber]);
-        if (similarity > 65) {
+        if (similarity > 50) {
             std::cout << "'"<<answers[questionNumber]<<"'\nCorrect! (" << similarity << "%)\n\n";
             questionNumber++;
             planetNumber++;
