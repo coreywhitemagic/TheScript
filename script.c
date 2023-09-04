@@ -99,7 +99,7 @@ int main(int argc, char* argv[]) {
             planetNumber = 0;
         }
         std::cout << "Line " << questionNumber + 1 << "\n("
-            << planet[planetNumber] << ")\n";
+            << planet[planetNumber] << ")\n\n";
         std::getline(std::cin, userAnswer);
         std::cout << std::endl;
         double similarity = similarityPercentage(userAnswer, answers[questionNumber]);
@@ -110,10 +110,21 @@ int main(int argc, char* argv[]) {
         }
         else {
             std::cout << "The correct answer was, '"
-                << answers[questionNumber] << "' (" << similarity << "%)\n" <<
-                "Starting over.\n\n";
-            questionNumber = 0;
-            planetNumber = 0;
+                << answers[questionNumber] << "' (" << similarity << "%)\n\n" <<
+                "Start over?\n\n";
+
+            std::string skip;
+            std::getline(std::cin, skip);
+            std::cout << std::endl;
+            
+            if (skip == "yes" || skip == "y") {
+                questionNumber = 0;
+                planetNumber = 0;
+            }
+            else {
+                questionNumber++;
+                planetNumber++;
+            }
         }
     }
 
