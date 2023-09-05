@@ -121,10 +121,7 @@ int main(int argc, char* argv[]) {
                 questionNumber = 0;
                 planetNumber = 0;
             }
-            else {
-                questionNumber++;
-                planetNumber++;
-            }
+            
         }
     }
 
