@@ -116,8 +116,8 @@ int main(int argc, char* argv[]) {
             std::string skip;
             std::getline(std::cin, skip);
             std::cout << std::endl;
-            
-            if (skip == "yes" || skip == "y") {
+            double similarity = similarityPercentage(skip, "yes");            
+            if (similarity > 50 || skip == "y") {
                 questionNumber = 0;
                 planetNumber = 0;
             }
