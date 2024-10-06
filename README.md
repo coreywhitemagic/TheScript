@@ -1,8 +1,10 @@
 # The Script
 
-The program script.c makes it easier to memorize any script, not just the lines from my book.  It uses AI to watch how close you are to the exact answer, which means you don't have to worry about typos.  If you get an answer wrong it tells you the right answer and gives you the option of starting over at the beginning. It also uses symbols as a memory mnemonic to help remember each line in the script.
+The program script.c makes it easier to memorize any script, not just the lines from my book.  It uses AI to watch how close you are to the exact answer, which means you don't have to worry about typos.  
 
-To use the tool execute script.exe and give it one of the text files in the repository. You will then get a prompt to type in the first line of the text file, followed by the next lines in the file.<br>
+To use the tool execute script.exe and give it one of the text files in the repository. You will then get a prompt to type in the first line of the text file, followed by the next lines in the file. If you get a line wrong you can start over or type the line in again.<br>
+
+The program comes with five scripts:
 
 astrology.txt - A reading for each star sign. <br>
 palmistry.txt - A single palm reading. <br>
