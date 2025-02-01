@@ -98,22 +98,19 @@ int main(int argc, char* argv[]) {
         if (planetNumber > 25) {
             planetNumber = 0;
         }
-        std::cout << "Line " << questionNumber + 1 << "\n("
-            << planet[planetNumber] << ")\n\n";
+        std::cout << "\033[37m" << "Line " << questionNumber + 1 << "\n\n> ";
         std::getline(std::cin, userAnswer);
         std::cout << std::endl;
         double similarity = similarityPercentage(userAnswer, answers[questionNumber]);
         if (similarity > 50) {
-            std::cout << "'"<<answers[questionNumber]<<"'\nCorrect! (" << similarity << "%)\n\n";
+            std::cout <<"\033[32m"<<answers[questionNumber]<<"\nCorrect! (" << similarity << "%)\n\n \033[0m";
             questionNumber++;
             planetNumber++;
         }
         else {
-            std::cout << "The correct answer was, '"
-                << answers[questionNumber] << "' (" << similarity << "%)\n\n" <<
-                "Start over?\n\n";
-
-            std::string skip;
+            std::cout <<"\033[31m"<<"The answer was (" << similarity << "%): \n"<<answers[questionNumber]<<"\n" << "Start over? \033[37m \n\n";
+            std::cout << "> ";
+	    std::string skip;
             std::getline(std::cin, skip);
             std::cout << std::endl;
             double similarity = similarityPercentage(skip, "yes");            
