@@ -1,6 +1,6 @@
 # The Script
 
-The program script.c makes it easier to memorize any script, not just the lines from my book.  It uses AI to watch how close you are to the exact answer, which means you don't have to worry about typos.  
+The program script.cpp makes it easier to memorize any script, not just the lines from my book.  It uses AI to watch how close you are to the exact answer, which means you don't have to worry about typos.  
 
 To use the tool execute script.exe and give it one of the text files in the repository. You will then get a prompt to type in the first line of the text file, followed by the next lines in the file. If you get a line wrong you can start over or type the line in again.<br>
 
