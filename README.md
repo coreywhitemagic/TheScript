@@ -1,4 +1,6 @@
 
+<br>
+
 # 🎭 The Script
 
 The Script is a simple C++ program that helps you memorize any script. It uses basic AI-style fuzzy matching to check how close your input is to the original line, so you don’t have to worry about typos or exact wording.
