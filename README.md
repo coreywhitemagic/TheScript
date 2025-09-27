@@ -45,7 +45,8 @@ script2.txt – 26 card readings
 script3.txt – 26 card readings
 
 
-🃏 Combine script1 and script2 for a full playing card deck. Use all three for a complete Tarot deck reading.
+🃏 Combine script1 and script2 for a full playing card deck. 
+Use all three for a complete Tarot deck reading.
 
 <br>
 
