@@ -18,10 +18,12 @@ You'll be prompted to type each line from the file, one at a time.
 
 If your input is close enough, you’ll move to the next line.
 
-If it’s wrong, retype the line or restart from the beginning.
+If it’s wrong, you can retype the line or restart from the beginning.
 
 
 ---
+
+<br>
 
 📜 Included Scripts
 
