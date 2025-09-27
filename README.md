@@ -8,6 +8,9 @@ The Script is a simple C++ program that helps you memorize any script. It uses b
 
 ---
 
+<br>
+
+
 🧠 How It Works
 
 Run the program with one of the included text files:
@@ -20,6 +23,7 @@ If your input is close enough, you’ll move to the next line.
 
 If it’s wrong, you can retype the line or restart from the beginning.
 
+<br>
 
 ---
 
@@ -42,8 +46,11 @@ script3.txt – 26 card readings
 
 🔮 Use all three for a complete Tarot deck reading.
 
+<br>
 
 ---
+
+<br>
 
 ⚙️ Compatibility
 
@@ -52,10 +59,4 @@ script3.txt – 26 card readings
 ✅ Precompiled Windows .exe included
 
 ✅ Works on Android with Termux
-
-
-
----
-
-Let me know if you'd like to add build instructions, screenshots, or usage examples!
 
