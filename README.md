@@ -13,8 +13,7 @@ The Script is a simple C++ program that helps you memorize any script. It uses b
 
 <br>
 
-
-🧠 How It Works
+🧩 How It Works
 
 Run the program with one of the included text files:
 
