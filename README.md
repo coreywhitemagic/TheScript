@@ -1,18 +1,57 @@
-# The Script
 
-The program script.cpp makes it easier to memorize any script, not just the lines from my book.  It uses AI to watch how close you are to the exact answer, which means you don't have to worry about typos.  
+# 🎭 The Script
 
-To use the tool execute script.exe and give it one of the text files in the repository. You will then get a prompt to type in the first line of the text file, followed by the next lines in the file. If you get a line wrong you can start over or type the line in again.<br>
+The Script is a simple C++ program that helps you memorize any script — not just the lines from your book. It uses basic AI-style fuzzy matching to check how close your input is to the original line, so you don’t have to worry about typos or exact wording.
 
-The program comes with five scripts:
 
-astrology.txt - A reading for each star sign. <br>
-palmistry.txt - A single palm reading. <br>
-script1.txt - 26 card readings <br>
-script2.txt - 26 card readings <br>
-script3.txt - 26 card readings <br>
+---
 
-You can combine two card reading scripts for an entire deck of playing cards.<br>
-And all three of them for an entire Tarot deck reading.<br>
+🧠 How It Works
 
-This code should compile easily using any C++ Compiler on Windows, Mac, or Linux. There is also a compiled Windows executable.
+Run the program with one of the included text files:
+
+script.exe astrology.txt
+
+You'll be prompted to type each line from the file, one at a time.
+
+If your input is close enough, you’ll move to the next line.
+
+If it’s wrong, retype the line or restart from the beginning.
+
+
+---
+
+📜 Included Scripts
+
+astrology.txt – A reading for each zodiac sign
+
+palmistry.txt – A single palm reading
+
+script1.txt – 26 card readings
+
+script2.txt – 26 card readings
+
+script3.txt – 26 card readings
+
+
+🃏 Combine script1 and script2 for a full playing card deck.
+
+🔮 Use all three for a complete Tarot deck reading.
+
+
+---
+
+⚙️ Compatibility
+
+✅ Compiles with any standard C++ compiler on Windows, macOS, or Linux
+
+✅ Precompiled Windows .exe included
+
+✅ Works on Android with Termux
+
+
+
+---
+
+Let me know if you'd like to add build instructions, screenshots, or usage examples!
+
