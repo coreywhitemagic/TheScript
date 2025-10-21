@@ -35,7 +35,11 @@ If it’s wrong, you can retype the line or restart from the beginning.
 
 astrology.txt – A reading for each zodiac sign
 
-palmistry.txt – A single palm reading
+palm1.txtt – A single palm reading
+
+palm2.txt - Another palm reading 
+
+palm3.txt - A further palm reading 
 
 script1.txt – 26 card readings
 
